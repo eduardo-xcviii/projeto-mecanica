@@ -2392,7 +2392,46 @@ ul.icons {
     #footer {
       padding: 2rem 0 0.1rem 0 ; } }
 
-/* Header */
+
+
+/* Section/Article */
+
+section.special, article.special {
+  text-align: center;
+}
+
+header p {
+  position: relative;
+  margin: 0 0 1.5rem 0;
+}
+
+header h2 + p {
+  font-size: 1.25rem;
+  margin-top: -1rem;
+}
+
+header h3 + p {
+  font-size: 1.1rem;
+  margin-top: -0.8rem;
+}
+
+header h4 + p,
+header h5 + p,
+header h6 + p {
+  font-size: 0.9rem;
+  margin-top: -0.6rem;
+}
+
+header p {
+  color: #bbb;
+}
+
+
+
+
+
+      /* Header */
+
 
 	
 
@@ -2400,9 +2439,9 @@ ul.icons {
   background: rgba(0, 0, 0, 0.975);
   color: #a6a6a6;
   cursor: default;
-  height: 3.25em;
+  height: 4.2em;
   left: 0;
-  line-height: 3.25em;
+  line-height: 4.2em;
   position: fixed;
   text-align: right;
   top: 0;
