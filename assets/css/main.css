@@ -951,6 +951,11 @@ table.alt tbody tr td {
   .testimonials .content .credit strong {
     color: #ce1b28; }
 
+.testimonials h3 {
+  text-transform:uppercase;
+  font-weight: bold;
+}
+
 /* Actions */
 ul.actions {
   display: -moz-flex;
@@ -2072,7 +2077,7 @@ ul.icons {
   background-color: #ce1b28;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(68, 68, 68, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/oficina.png);
+  background-image: linear-gradient(rgba(27, 27, 27, 0.753), rgba(0, 0, 0, 0.486)), url(../../images/oficina.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2476,15 +2481,16 @@ header p {
 			transition: color 0.2s ease-in-out;
 			display: inline-block;
 			padding: 0 2em;
-			color: #ffffff;
+			color: #fff;
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: .85em;
     }
     
-    #header > a:hover {
-      color: #f2f2f2;
+    #header a:hover {
+			color: rgb(255, 46, 46);
+			text-transform: uppercase;
     }
 
 		
@@ -2595,8 +2601,8 @@ body.subpage {
 		position: fixed;
 		text-decoration: none;
 		height: 4em;
-		right: 3em;
-		top: .75em;
+		right: 2em;
+		top: .45em;
 		width: 4em;
 		display: none;
 		z-index: 10002;
