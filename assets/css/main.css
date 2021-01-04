@@ -1934,6 +1934,8 @@ ul.icons {
     z-index: 0;
   }
 
+
+
     .banner > article:before {
       content: '';
       display: inline-block;
@@ -1953,29 +1955,48 @@ ul.icons {
       opacity: 0.35;
     }
 
-    .banner > article .inner {
+    /* .banner > article .inner {
       position: relative;
       display: inline-block;
       vertical-align: middle;
-      z-index: 1;
+      z-index: 9999;
+    } */
+
+    /*  Texto do banner */
+  .banner > .text-banner {
+    margin-top: 120px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    vertical-align: middle;
+  }
+
+    .banner > .text-banner .inner {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      z-index: 9999;
     }
 
-      .banner > article .inner > :last-child {
+      .banner > .inner > :last-child {
         margin-bottom: 0;
       }
 
-    .banner > article h2 {
+    .banner > .text-banner h2 {
       font-size: 7rem;
       margin-bottom: 0;
       color: #FFF;
       font-weight: 300;
+      font-family: Blenda;
     }
 
-      .banner > article h2:after {
+      .banner > .text-banner h2:after {
         display: none;
       }
 
-    .banner > article p {
+    .banner > .text-banner p {
       color: rgba(255, 255, 255, 0.65);
       text-transform: uppercase;
       font-size: 1rem;
@@ -1985,7 +2006,7 @@ ul.icons {
       letter-spacing: .25rem;
     }
 
-      .banner > article p:after {
+      .banner > .text-banner p:after {
         content: '';
         position: absolute;
         margin: auto;
@@ -1997,7 +2018,7 @@ ul.icons {
         background-color: rgba(255, 255, 255, 0.65);
       }
 
-    .banner > article a {
+    .banner > .text-banner a {
       color: #FFF;
       text-decoration: none;
     }
@@ -2045,30 +2066,30 @@ ul.icons {
       height: 60vh !important;
     }
 
-    .banner > article {
-      background-attachment: scroll;
+    .banner > .text-banner {
+      margin-top: 100px;
     }
 
   }
 
   @media screen and (max-width: 1000px) {
 
-    .banner > article .inner {
+    .banner > .text-banner .inner {
       width: 90%;
     }
 
-    .banner > article p {
+    .banner > .text-banner p {
       margin-bottom: 1rem;
     }
 
-    .banner > article h2 {
+    .banner > .text-banner h2 {
       font-size: 2.8em;
     }
 
   }
 
-  body.is-mobile .banner > article {
-    background-attachment: scroll;
+  body.is-mobile .banner > .text-banner {
+    margin-top: 160px;
   }
 
 
