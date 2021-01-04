@@ -1,6 +1,10 @@
+
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
-
+@font-face {
+  font-family: Blenda Script;
+  src: url("../fonts/Blenda-Script.otf") format("opentype");
+}
   /*
   Template -> Mecânica  e Auto-eletrica
 	Tamplete by Eduardo Martins
@@ -1964,7 +1968,7 @@ ul.icons {
 
     /*  Texto do banner */
   .banner > .text-banner {
-    margin-top: 120px;
+    margin-top: 60px;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -1986,10 +1990,12 @@ ul.icons {
 
     .banner > .text-banner h2 {
       font-size: 7rem;
+      text-transform:capitalize;
       margin-bottom: 0;
       color: #FFF;
       font-weight: 300;
-      font-family: Blenda;
+      letter-spacing: 10px;
+      font-family: Blenda Script;
     }
 
       .banner > .text-banner h2:after {
@@ -2067,9 +2073,15 @@ ul.icons {
     }
 
     .banner > .text-banner {
-      margin-top: 100px;
+      margin-top: 80px;
     }
 
+  }
+  @media screen and (max-width: 400px) {
+
+    .banner > .text-banner {
+      margin-top: 65px;
+    }
   }
 
   @media screen and (max-width: 1000px) {
@@ -2089,8 +2101,10 @@ ul.icons {
   }
 
   body.is-mobile .banner > .text-banner {
-    margin-top: 160px;
+    margin-top: 100px;
   }
+
+  
 
 
 /* CTA */
@@ -2558,13 +2572,17 @@ header p {
   line-height: 4em;
 }
 
+#header.alt img {
+  visibility: hidden;
+}
+
 
 #header > .logo {
   display: inline-block;
   height: inherit;
   left: 0.5em;
   margin: 0;
-  padding: 12px 0px 0px 0px;
+  padding: 9px 0px 0px 0px;
   position: absolute;
   top: 0;
 }
